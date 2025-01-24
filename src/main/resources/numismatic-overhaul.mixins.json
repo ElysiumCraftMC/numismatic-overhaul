@@ -13,12 +13,24 @@
     "TradeOfferInternalsMixin",
     "TradeOfferListMixin",
     "TradeOfferMixin",
-    "VillagerEntityMixin"
+    "VillagerEntityMixin",
+    "stacc.BundleItemMixin",
+    "stacc.ClearCommandBugFixin",
+    "stacc.ClearCommandBugFixin$InventoriesFixin",
+    "stacc.CraftingInventoryMixin_LimitStackSize",
+    "stacc.CreativeDesyncFixin",
+    "stacc.DesktopHandSplayedDuplicationFixin",
+    "stacc.InventoryMixin",
+    "stacc.ItemMaxCountAccess",
+    "stacc.OOMFixin",
+    "stacc.PlayerInventoryMixin",
+    "stacc.SerializationFixin"
   ],
   "client": [
     "InventorioScreenMixin",
     "InventoryScreenMixin",
-    "MerchantScreenMixin"
+    "MerchantScreenMixin",
+    "stacc.RenderItemCountFixin"
   ],
   "injectors": {
     "defaultRequire": 1

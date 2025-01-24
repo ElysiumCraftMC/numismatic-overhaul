@@ -8,6 +8,7 @@ import com.glisco.numismaticoverhaul.item.NumismaticOverhaulItems;
 import com.glisco.numismaticoverhaul.network.RequestPurseActionC2SPacket;
 import com.glisco.numismaticoverhaul.network.ShopScreenHandlerRequestC2SPacket;
 import com.glisco.numismaticoverhaul.network.UpdateShopScreenS2CPacket;
+import com.glisco.numismaticoverhaul.stacc.StaccLoader;
 import com.glisco.numismaticoverhaul.villagers.data.VillagerTradesResourceListener;
 import com.glisco.numismaticoverhaul.villagers.json.VillagerTradesHandler;
 import io.wispforest.owo.itemgroup.OwoItemGroup;
@@ -77,6 +78,7 @@ public class NumismaticOverhaul implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        StaccLoader.initialize();
 
         FieldRegistrationHandler.register(NumismaticOverhaulItems.class, MOD_ID, false);
         FieldRegistrationHandler.register(NumismaticOverhaulBlocks.class, MOD_ID, false);
